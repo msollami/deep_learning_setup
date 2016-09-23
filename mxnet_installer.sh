@@ -22,7 +22,7 @@ sudo apt-get update;sudo apt-get install -y build-essential git libblas-dev liba
 echo "============================================"
 echo "Installing CUDNN" 
 echo "--------------------------------------------"
-echo "Check if cuda is running; run: nvidia-smi"
+echo "Check if cuda is running; run: nvidia-smi   "
 echo "============================================"
 
 wget http://ilab.usc.edu/packages/forall/ubuntu-13.10/cudnn-7.0-linux-x64-v4.0-prod.tgz
