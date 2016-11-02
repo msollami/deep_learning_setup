@@ -70,10 +70,12 @@ sudo bazel build -c opt --config=cuda //tensorflow/cc:tutorials_example_trainer
 sudo bazel build -c opt --config=cuda //tensorflow/tools/pip_package:build_pip_package
 sudo bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 
-#tensorflow fucks up with the wrong pip version
+#warning: tensorflow fails on wrong pip version
 sudo easy_install pip==8.1.2
-#if it doesn't work lookinto /tmp/tensorflow_pkg directory (and modify the line below for the right version )
-sudo pip install --upgrade /tmp/tensorflow_pkg/tensorflow-0.11.0rc0-py2-none-any.whl
+#warning: if the next line doesn't work look in /tmp/tensorflow_pkg directory (and modify the line below for the right version )
+export tfwhl=$(ls /tmp/tensorflow_pkg/*.whl)
+sudo pip install --upgrade  $tfwhl
+
 
 echo "============================================"
 echo "Finished installing tensorflow              "

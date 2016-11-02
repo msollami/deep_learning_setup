@@ -48,12 +48,12 @@ echo "============================================"
 
 chmod +x pre_installer.sh
 chmod +x nvidia_installer.sh
+chmod +x tensorflow_installer.sh
 chmod +x caffe_installer.sh
 chmod +x dlib_installer.sh
 chmod +x mxnet_installer.sh
 chmod +x theano_installer.sh
 chmod +x torch_installer.sh
-chmod +x tensorflow_installer.sh
 chmod +x keras_installer.sh
 chmod +x post_installer.sh
 
@@ -65,8 +65,8 @@ chmod +x post_installer.sh
 ./mxnet_installer.sh
 ./theano_installer.sh
 ./torch_installer.sh
-./tensorflow_installer.sh
 ./keras_installer.sh
+./tensorflow_installer.sh
 ./post_installer.sh
 
 
