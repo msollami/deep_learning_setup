@@ -20,8 +20,12 @@ echo "export CUDA_HOME=/usr/local/cuda" >> ~/.bashrc
 
 
 echo "============================================"
-echo "Install scripts complete!                   "
+echo "Install scripts finished                    "
 echo "============================================"
 
 source ~/.bashrc
 exec bash
+
+echo "============================================"
+echo "Restart device to complete installation     "
+echo "============================================"
